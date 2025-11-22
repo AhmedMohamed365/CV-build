@@ -26,10 +26,13 @@ jobs:
     
     steps:
     - name: Checkout repository
-      uses: actions/checkout@v4  # Using tag version for ease of maintenance
+      uses: actions/checkout@v4  # Semantic versioning for maintainability
+      # For maximum security in production, pin to commit SHA like:
+      # uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11
       
     - name: Setup TeX Live
-      uses: teatimeguest/setup-texlive-action@v3  # For stricter security, pin to commit SHA
+      uses: teatimeguest/setup-texlive-action@v3  # Semantic versioning
+      # For stricter security, pin to specific commit SHA
       with:
         packages: |
           scheme-basic

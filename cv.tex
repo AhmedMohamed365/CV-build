@@ -24,7 +24,7 @@
 
 % Font options
 % Note: Roboto font package required. Install with: tlmgr install roboto
-% Alternative fonts if Roboto unavailable: \usepackage{helvet} or \usepackage{arial}
+% Alternative fonts if Roboto unavailable: \usepackage{helvet} or \usepackage{tgadventor}
 \usepackage[sfdefault]{roboto}  % Sans-serif font for modern look
 
 \pagestyle{fancy}
@@ -85,7 +85,8 @@
 
 \newcommand{\resumeProjectHeading}[2]{
     \item
-    % Width slightly larger than 1.0 to prevent line wrapping issues with right-aligned content
+    % Width set to 1.001\textwidth (slightly larger than full width) to prevent line wrapping 
+    % issues with right-aligned content while maintaining proper justification
     \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
       \small#1 & \textbf{\small #2}\\
     \end{tabular*}\vspace{-7pt}
