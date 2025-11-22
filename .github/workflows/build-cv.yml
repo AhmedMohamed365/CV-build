@@ -19,6 +19,11 @@ jobs:
   build-pdf:
     runs-on: ubuntu-latest
     
+    # Set minimal permissions for security
+    permissions:
+      contents: read
+      actions: read
+    
     steps:
     - name: Checkout repository
       uses: actions/checkout@v4  # Using tag version for ease of maintenance
