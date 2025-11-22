@@ -13,6 +13,8 @@ A professional CV building system using LaTeX with AI-powered assistance through
 
 ## Quick Start
 
+**New here?** Start with the [Quick Start Guide](QUICKSTART.md) for a 5-minute setup!
+
 ### Prerequisites
 - VS Code
 - TeX Live (LaTeX engine)
@@ -25,6 +27,8 @@ A professional CV building system using LaTeX with AI-powered assistance through
 4. Edit `cv_draft.txt` with your information
 5. Transfer content to `cv.tex`
 6. Save and preview your PDF!
+
+For detailed instructions, see [QUICKSTART.md](QUICKSTART.md).
 
 ## Documentation
 
