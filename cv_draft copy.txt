@@ -1,0 +1,93 @@
+# CV Draft - Personal Information and Experience
+
+## Personal Information
+Name: [Your Full Name]
+Title: [Your Professional Title]
+Email: [your.email@example.com]
+Phone: [Your Phone Number]
+Location: [City, Country]
+LinkedIn: [Your LinkedIn Profile]
+GitHub: [Your GitHub Profile]
+
+## Professional Summary
+[Write a 2-3 sentence summary highlighting your key skills, experience, and career objectives. This should be tailored to your target role and be ATS-friendly with relevant keywords.]
+
+## Skills
+### Technical Skills
+- Programming Languages: [e.g., Python, Java, JavaScript, C++]
+- Frameworks & Libraries: [e.g., React, Node.js, Django, Spring]
+- Tools & Technologies: [e.g., Git, Docker, Kubernetes, AWS]
+- Databases: [e.g., MySQL, PostgreSQL, MongoDB]
+
+### Soft Skills
+- [e.g., Leadership, Communication, Problem Solving]
+- [e.g., Team Collaboration, Time Management]
+
+## Professional Experience
+
+### [Job Title] - [Company Name]
+Location: [City, Country]
+Duration: [Start Date] - [End Date / Present]
+
+Responsibilities and Achievements:
+- [Achievement/Responsibility with quantifiable results if possible]
+- [Achievement/Responsibility with quantifiable results if possible]
+- [Achievement/Responsibility with quantifiable results if possible]
+
+### [Job Title] - [Company Name]
+Location: [City, Country]
+Duration: [Start Date] - [End Date]
+
+Responsibilities and Achievements:
+- [Achievement/Responsibility with quantifiable results if possible]
+- [Achievement/Responsibility with quantifiable results if possible]
+
+## Education
+
+### [Degree] in [Field of Study]
+Institution: [University Name]
+Location: [City, Country]
+Duration: [Start Year] - [End Year]
+GPA: [Your GPA] (if relevant)
+
+Key Courses: [List relevant courses]
+
+## Projects
+
+### [Project Name]
+Duration: [Start Date] - [End Date]
+Technologies: [List technologies used]
+
+Description:
+- [Brief description of the project]
+- [Key achievements or outcomes]
+- [Link to project if applicable]
+
+### [Project Name]
+Duration: [Start Date] - [End Date]
+Technologies: [List technologies used]
+
+Description:
+- [Brief description of the project]
+- [Key achievements or outcomes]
+
+## Certifications
+- [Certification Name] - [Issuing Organization], [Year]
+- [Certification Name] - [Issuing Organization], [Year]
+
+## Languages
+- [Language]: [Proficiency Level]
+- [Language]: [Proficiency Level]
+
+## Interests
+[List professional interests or hobbies that might be relevant]
+
+---
+
+Notes for AI Agents:
+- Ensure all content is ATS-friendly (Applicant Tracking System)
+- Use action verbs (e.g., Developed, Implemented, Led, Managed)
+- Include quantifiable achievements where possible
+- Keep formatting consistent
+- Tailor content to target job descriptions
+- Use industry-standard keywords

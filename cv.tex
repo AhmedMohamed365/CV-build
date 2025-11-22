@@ -1,0 +1,224 @@
+%-------------------------
+% CV Template - LaTeX
+% Designed to be ATS-friendly and professional
+%-------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+% Font options
+% Note: Roboto font package required. Install with: tlmgr install roboto
+% Alternative fonts if Roboto unavailable: \usepackage{helvet} or \usepackage{tgadventor}
+\usepackage[sfdefault]{roboto}  % Sans-serif font for modern look
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\setlength{\footskip}{10pt}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{1.0\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    % Width set to 1.001\textwidth (slightly larger than full width) to prevent line wrapping 
+    % issues with right-aligned content while maintaining proper justification
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+  {\Huge \normalfont Omar Farouk Abdelnour Khala}\\[6pt]
+    \small
+    \faIcon{map-marker-alt}\ UAE \ \ $|$ \ \
+    \href{mailto:omerfarouk000@gmail.com}{\faIcon{envelope}\ \underline{omerfarouk000@gmail.com}} \ \ $|$ \ \
+    \href{tel:+971501234567}{\faIcon{phone}\ \textbf{+971-50-123-4567}}
+\end{center}
+
+%-----------PROFESSIONAL SUMMARY-----------
+\section{Professional Summary}
+\small{Versatile and dedicated professional with over 15 years of diverse experience in executive management, real estate sales, construction supervision, and religious leadership. Proven ability to lead teams, drive sales growth, and manage complex projects from conception to completion. Seeking to leverage strong operational and interpersonal skills in a challenging new role.}
+
+%-----------SKILLS-----------
+\section{Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}] 
+    \small{\item{
+     	\textbf{Professional}{: Executive Management, Sales \& Marketing, Project Supervision, Construction Management} \\
+     	\textbf{Technical}{: Proficient in reading structural and architectural engineering drawings, Project Delivery} \\
+     	\textbf{Languages}{: Arabic (Native), English (Good Proficiency)} \\
+     	\textbf{Additional}{: Quranic Studies, Comparative Religion, Public Speaking, Community Leadership}
+    }}
+ \end{itemize}
+ \vspace{-16pt}
+
+%-----------EXPERIENCE-----------
+\section{Professional Experience}
+   \resumeSubHeadingListStart
+
+     \resumeSubheading
+      {Permanent Substitute Imam and Mosque Preacher}{2023 -- 2025}
+      {Abu Dhabi, UAE}{}
+       \resumeItemListStart
+         \resumeItem{Led daily prayers and delivered sermons to the local community.}
+         \resumeItem{Developed and taught educational programs on Quran memorization and Islamic studies.}
+       \resumeItemListEnd
+
+     \resumeSubheading
+      {Executive Manager}{2019 -- 2020}
+      {Janda Company}{Egypt}
+       \resumeItemListStart
+         \resumeItem{Oversaw all executive management functions, including strategic planning and daily operations.}
+         \resumeItem{Directed company resources to achieve strategic goals and improve operational efficiency.}
+       \resumeItemListEnd
+
+     \resumeSubheading
+      {Sales Manager}{2017 -- 2019}
+      {Limar Real Estate Development}{6th of October City, Egypt}
+       \resumeItemListStart
+         \resumeItem{Managed all sales operations, leading the team to become the top-performing unit.}
+         \resumeItem{Achieved the highest sales volume for the fiscal years 2018-2019, significantly boosting company revenue.}
+         \resumeItem{Received the "Top Sales Performance" award in recognition of outstanding results.}
+       \resumeItemListEnd
+
+     \resumeSubheading
+      {Food Trading Business Owner}{2013 -- 2017}
+      {Self-Employed}{Egypt}
+       \resumeItemListStart
+         \resumeItem{Successfully founded and operated an independent food trading business.}
+         \resumeItem{Managed all aspects of the business, including inventory, supplier negotiations, and customer relations.}
+       \resumeItemListEnd
+
+     \resumeSubheading
+      {Mosque Imam}{2010 -- 2013}
+      {Cairo, Egypt}{}
+       \resumeItemListStart
+         \resumeItem{Led daily prayers, delivered sermons, and provided religious guidance to the community.}
+         \resumeItem{Organized and conducted religious services and community events.}
+       \resumeItemListEnd
+
+     \resumeSubheading
+      {Executive Supervisor}{2007 -- 2010}
+      {Al-Doha Contracting Company}{Egypt}
+       \resumeItemListStart
+         \resumeItem{Provided executive supervision for multiple construction sites, ensuring projects met quality standards.}
+         \resumeItem{Utilized expertise in reading structural and architectural drawings to manage project execution.}
+         \resumeItem{Oversaw project delivery and final acceptance processes.}
+       \resumeItemListEnd
+
+   \resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------
+\section{Education}
+   \resumeSubHeadingListStart
+     \resumeSubheading
+      {Bachelor of Law}{[2007]}
+      {[Cairo University]}{[Cairo, Egypt]}
+     \resumeSubheading
+      {Religious Studies}{}
+      {Independent Study}{}
+       \resumeItemListStart
+         \resumeItem{Completed an intensive course in Shafi'i Fiqh (based on the text of Matn Abi Shuja).}
+         \resumeItem{Conducted in-depth studies in comparative religions and the origins of scripture.}
+         \resumeItem{Memorized twenty parts of the Holy Quran.}
+       \resumeItemListEnd
+   \resumeSubHeadingListEnd
+
+%-----------HONORS & RECOGNITION-----------
+\section{Honors \& Recognition}
+\resumeSubHeadingListStart
+     \resumeProjectHeading
+        {\textbf{Top Sales Performance Award}}{2019}
+\resumeSubHeadingListEnd
+
+%-----------CERTIFICATIONS & LICENSES-----------
+\section{Certifications \& Licenses}
+\resumeSubHeadingListStart
+     \resumeProjectHeading
+        {\textbf{Experience Certificate in Real Estate Marketing}}{Limar Company}
+     \resumeProjectHeading
+        {\textbf{Valid Driving Licenses}}{Egypt \& UAE}
+\resumeSubHeadingListEnd
+
+\end{document}
