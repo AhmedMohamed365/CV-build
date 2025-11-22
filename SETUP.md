@@ -61,7 +61,8 @@ Open VS Code and install these extensions:
 pdflatex --version
 
 # Should output something like:
-# pdfTeX 3.141592653-2.6-1.40.XX (TeX Live 2023)
+# pdfTeX 3.141592653-2.6-1.40.XX (TeX Live YYYY)
+# where YYYY is your TeX Live version year
 ```
 
 ### Check VS Code Extensions

@@ -23,6 +23,8 @@
 \input{glyphtounicode}
 
 % Font options
+% Note: Roboto font package required. Install with: tlmgr install roboto
+% Alternative fonts if Roboto unavailable: \usepackage{helvet} or \usepackage{arial}
 \usepackage[sfdefault]{roboto}  % Sans-serif font for modern look
 
 \pagestyle{fancy}
@@ -83,6 +85,7 @@
 
 \newcommand{\resumeProjectHeading}[2]{
     \item
+    % Width slightly larger than 1.0 to prevent line wrapping issues with right-aligned content
     \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
       \small#1 & \textbf{\small #2}\\
     \end{tabular*}\vspace{-7pt}

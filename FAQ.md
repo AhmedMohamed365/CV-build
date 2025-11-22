@@ -443,12 +443,19 @@ Overleaf includes all packages, so no installation needed.
 
 ### Q: How do I set up automatic builds with GitHub Actions?
 
-**A:** Already included! The `.github/workflows/build-cv.yml` file:
-- Builds PDF automatically when you push changes to `cv.tex`
-- Uploads PDF as downloadable artifact
-- Runs on every commit to main/master branch
+**A:** A GitHub Actions workflow is included in `.github/workflows/build-cv.yml`. To enable it:
 
-Enable by pushing the workflow file to your repository.
+1. Ensure the workflow file is committed to your repository
+2. Push to your main/master branch or create a pull request
+3. Go to your repository → Actions tab
+4. You should see the "Build CV" workflow
+
+Once enabled:
+- Builds PDF automatically when you push changes to `cv.tex`
+- Uploads PDF as downloadable artifact (available for 90 days)
+- Runs on every commit to main/master branch or manual trigger
+
+Note: The workflow is already committed in this repository and should work automatically.
 
 ## Getting Help
 
