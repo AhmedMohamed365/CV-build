@@ -1,0 +1,67 @@
+name: Build CV
+
+# This workflow automatically builds your CV PDF when you push changes
+# The PDF artifact can be downloaded from the Actions tab
+
+on:
+  push:
+    branches: [ main, master ]
+    paths:
+      - 'cv.tex'
+      - '.github/workflows/build-cv.yml'
+  pull_request:
+    branches: [ main, master ]
+    paths:
+      - 'cv.tex'
+  workflow_dispatch: # Allow manual trigger
+
+jobs:
+  build-pdf:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      
+    - name: Setup TeX Live
+      uses: teatimeguest/setup-texlive-action@v3
+      with:
+        packages: |
+          scheme-basic
+          latexmk
+          latex-bin
+          collection-fontsrecommended
+          collection-latexrecommended
+          fontawesome5
+          roboto
+          
+    - name: Build CV PDF
+      run: |
+        pdflatex -interaction=nonstopmode -file-line-error cv.tex
+        
+    - name: Check if PDF was created
+      run: |
+        if [ -f cv.pdf ]; then
+          echo "✓ PDF successfully created"
+          ls -lh cv.pdf
+        else
+          echo "✗ PDF build failed"
+          exit 1
+        fi
+        
+    - name: Upload CV PDF as artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: cv-pdf
+        path: cv.pdf
+        retention-days: 90
+        
+    - name: Upload build logs on failure
+      if: failure()
+      uses: actions/upload-artifact@v4
+      with:
+        name: build-logs
+        path: |
+          *.log
+          *.aux
+        retention-days: 7

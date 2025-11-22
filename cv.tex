@@ -1,0 +1,212 @@
+%-------------------------
+% CV Template - LaTeX
+% Designed to be ATS-friendly and professional
+%-------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+% Font options
+\usepackage[sfdefault]{roboto}  % Sans-serif font for modern look
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{1.0\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    {\Huge \scshape Your Full Name} \\ \vspace{1pt}
+    \small 
+    \faIcon{phone} \textbf{+1-XXX-XXX-XXXX} $|$ 
+    \href{mailto:your.email@example.com}{\faIcon{envelope} \underline{your.email@example.com}} $|$ 
+    \href{https://linkedin.com/in/yourprofile}{\faIcon{linkedin} \underline{linkedin.com/in/yourprofile}} $|$
+    \href{https://github.com/yourusername}{\faIcon{github} \underline{github.com/yourusername}}
+    \vspace{-8pt}
+\end{center}
+
+%-----------PROFESSIONAL SUMMARY-----------
+\section{Professional Summary}
+\small{Experienced [Your Title] with [X] years of expertise in [key skills/technologies]. Proven track record of [key achievement]. Seeking to leverage [specific skills] in a [target role] position.}
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Programming Languages}{: Python, Java, JavaScript, C++, SQL} \\
+     \textbf{Frameworks \& Libraries}{: React, Node.js, Django, Spring Boot, Flask} \\
+     \textbf{Tools \& Technologies}{: Git, Docker, Kubernetes, AWS, Jenkins, CI/CD} \\
+     \textbf{Databases}{: MySQL, PostgreSQL, MongoDB, Redis} \\
+     \textbf{Soft Skills}{: Leadership, Communication, Problem Solving, Team Collaboration}
+    }}
+ \end{itemize}
+ \vspace{-16pt}
+
+%-----------EXPERIENCE-----------
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Software Engineer}{June 2022 -- Present}
+      {Company Name}{City, Country}
+      \resumeItemListStart
+        \resumeItem{Developed and maintained scalable web applications using React and Node.js, serving 100K+ users}
+        \resumeItem{Implemented RESTful APIs and microservices architecture, improving system performance by 40\%}
+        \resumeItem{Led a team of 3 developers in delivering critical features on time and within budget}
+        \resumeItem{Collaborated with cross-functional teams to design and implement CI/CD pipelines using Jenkins}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Junior Developer}{Jan 2020 -- May 2022}
+      {Previous Company}{City, Country}
+      \resumeItemListStart
+        \resumeItem{Built responsive web interfaces using HTML, CSS, JavaScript, and React framework}
+        \resumeItem{Optimized database queries, reducing response time by 30\%}
+        \resumeItem{Participated in code reviews and contributed to team's coding standards documentation}
+    \resumeItemListEnd
+    
+  \resumeSubHeadingListEnd
+\vspace{-16pt}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Bachelor of Science in Computer Science}{Sep 2016 -- May 2020}
+      {University Name}{City, Country}
+      \resumeItemListStart
+        \resumeItem{\textbf{GPA}: 3.8/4.0}
+        \resumeItem{\textbf{Relevant Coursework}: Data Structures, Algorithms, Database Systems, Software Engineering}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+\vspace{-16pt}
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{E-commerce Platform} $|$ \emph{React, Node.js, MongoDB, AWS}}{2023}
+          \resumeItemListStart
+            \resumeItem{Developed a full-stack e-commerce application with user authentication, product catalog, and payment integration}
+            \resumeItem{Implemented shopping cart functionality and order management system}
+            \resumeItem{Deployed on AWS with automatic scaling and load balancing}
+          \resumeItemListEnd
+          \vspace{-13pt}
+      \resumeProjectHeading
+          {\textbf{Task Management Tool} $|$ \emph{Python, Django, PostgreSQL}}{2022}
+          \resumeItemListStart
+            \resumeItem{Created a collaborative task management application with real-time updates}
+            \resumeItem{Integrated user roles and permissions for team-based workflow}
+          \resumeItemListEnd 
+    \resumeSubHeadingListEnd
+\vspace{-15pt}
+
+%-----------CERTIFICATIONS-----------
+\section{Certifications}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{AWS Certified Solutions Architect}{, Amazon Web Services, 2023} \\
+     \textbf{Professional Scrum Master (PSM I)}{, Scrum.org, 2022}
+    }}
+ \end{itemize}
+ \vspace{-16pt}
+
+%-----------LANGUAGES-----------
+\section{Languages}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{English}{: Native/Fluent} \\
+     \textbf{Spanish}{: Professional Working Proficiency}
+    }}
+ \end{itemize}
+
+\end{document}
